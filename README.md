@@ -1,10 +1,10 @@
-# GettingandCleaningData
+## GettingandCleaningData
 This is a markdown file explaining computational steps I took to clean up the UCI HAR Dataset.
 
 All .txt files relevant for the analysis where placed in one folder. 
 The script run_analysis.R was run and results generated.
 
-#Step1 Import and merge test and train datasets 
+##Step1 Import and merge test and train datasets 
 I load files: X_test.txt/X_train.txt (collected data), subject_test.txt/subject_train.txt (subject number)
 , y_test.txt/y_train.txt (activity label), into dataframes.
 
@@ -15,7 +15,7 @@ df_subject & df_activity.
 
 check: dimension of df [10299 561]
 
-# Step2 Extract only measurements of mean and standard deviation for each measurement variable. 
+## Step2 Extract only measurements of mean and standard deviation for each measurement variable. 
  
  The file features.txt has all the column names listed in it. To pull out all the mean(std) measurement columns & column names I 
  use the grep command. This allows me to subset df based on mean (stored in df_mean_ss) and std (stored in df_std_ss) measurements. 
