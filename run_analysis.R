@@ -28,11 +28,13 @@ names(df_activity)[1]<-"activity"
     feature_list<-read.table("features.txt")
     columns_with_means<-grep("mean",feature_list$V2)
     names_with_mean<-grep("mean",feature_list$V2,value=TRUE)
+    # Clean the names
     names_with_mean<-gsub("-","",names_with_mean)
     names_with_mean<-sub("\\()","",names_with_mean)
     ##
     columns_with_std<-grep("std",feature_list$V2)
     names_with_std<-grep("std",feature_list$V2,value=TRUE)
+    # Clean the names
     names_with_std<-gsub("-","",names_with_std)
     names_with_std<-sub("\\()","",names_with_std)
     ##
