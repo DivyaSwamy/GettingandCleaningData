@@ -28,11 +28,11 @@ check: dimension of df [10299 561]
  
  check: dimension of df_final [10299 81]: 
  
- ## Step 3: Use descriptive activity names to name the activities in the data set.
+## Step 3: Use descriptive activity names to name the activities in the data set.
  
  I create an character array activity_label which labels the six different activities being measured. The labels were obtained from file activity_labels.txt. I substitute  the numeric activity label (1..6) for the descriptive labels at the very end, after I have processed and calculated all the relavant means.  
  
- ## Step4: Appropriately labels the data set with descriptive variable names.
+## Step4: Appropriately labels the data set with descriptive variable names.
  
  The descriptive column names were extracted from features.txt in step2.  The names were cleaned and columns in df_final appropriately labelled. See step 2 for details.
  
