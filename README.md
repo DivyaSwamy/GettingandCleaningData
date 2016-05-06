@@ -41,6 +41,8 @@ check: dimension of df [10299 561]
  For this step I first load library dplyr. 
  
  Split is used to split dataframe df_final by subject. This will give us a list with 30 elements, one for each subject. On each element of this list, split is used again to separate by activity. Therefore, each subject list gets subsectioned into 6 lists based on activity label. The command sapply,calling function colMeans, in a for loop, is used to calculate the average of every variable for each activity and each subject. 
+ 
+ Check:The final Matrix has dimensions of [180,81].The number of rows equal the number of subjects(30) times the number of activity recorded (6). 
 
  Once the matrix is created, I rearrange the columns making subject the first column and activity the second. 
  
