@@ -21,7 +21,7 @@ check: dimension of df [10299 561]
  use the grep command. This allows me to subset df based on mean (stored in df_mean_ss) and std (stored in df_std_ss) measurements. 
  There are a total of 46 columns measuring mean values and 33 columns measuring std values. 
  
- Command gsub, sub and tolower are used to clean up column names. The cleaned names are then passed to  label respective columms in df_std_ss & df_mean_ss.
+ Command gsub, sub and tolower are used to clean up column names. The cleaned names are then passed to label respective columms in df_std_ss & df_mean_ss.
  
  Finally mean and std subset dataframes are merged together with df_activity and df_subject to create a 
  final dataframe to work with : df_final. All columns that are not measuring mean or std have been removed. 
@@ -48,7 +48,7 @@ check: dimension of df [10299 561]
  
  I convert the final matrix into a data table, and give the activity column descriptive labels. 
  
- Finally write.table() is used to create the final tidy  .txt file: FinalTidyDataSet.txt
+ Finally write.table() is used to create the final tidy .txt file: "FinalTidyDataSet.txt"
 
 
 
